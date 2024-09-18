@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="logic">
+        <div class="user-id">
+            <form action="/submit_form" method="POST">
+                <!--   Label for Climate Selection -->
+                <label for="climate">Preferred Climate:</label>
+                <select name="climate" id="climate">
+        <option value="Tropical">Tropical</option>
+        <option value="Dry">Dry</option>
+        <option value="Temperate">Temperate</option>
+        <option value="Cold">Cold</option>
+    </select>
+
+                <!-- Label for Continent Selection -->
+                <label for="continent">Preferred Continent:</label>
+                <select name="continent" id="continent">
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="South America">South America</option>
+        <option value="Australia">Australia</option>
+        <option value="Antarctica">Antarctica</option>
+    </select>
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
