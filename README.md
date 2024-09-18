@@ -20,7 +20,7 @@ In today’s fast-paced world, we want recommendations tailored to our likes and
 
 ## 🚀 Deployed Site & Blog Article
 [link-1]
-[link-2]
+https://dev.to/ebitech02/wanderwise-app-mf1
 
 ## 🛠️ Tech Stack
 
