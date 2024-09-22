@@ -1,0 +1,354 @@
+ 
+    
+  .hero-section img {
+      width: 100%;
+      height: 600px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      /* border-radius: 11% 0%; */
+      /*  filter: grayscale(60%); */
+  }
+  
+  .hero-img-cover {
+      position: relative;
+      background-color: black;
+      height: 600px;
+      width: 100%;
+      z-index: 10;
+      opacity: 60%;
+  }
+  
+  h1 {
+      font-size: 2.7em;
+      padding-bottom: 7px;
+  }
+  
+  .intro1 {
+      color: whitesmoke;
+      position: absolute;
+      align-content: center;
+      top: 40%;
+      left: 10%;
+      z-index: 1000;
+  }
+  
+  .intro1 p {
+      font-size: 1.1em;
+      padding-left: 9px;
+  }
+  
+  .intro1 button {
+      margin-top: 15px;
+      padding: 12px;
+      margin-left: 13px;
+      align-content: center;
+      border: #333;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  .about {
+      padding: 0px 20px;
+      margin: 70px 0px;
+      height: 200px;
+  }
+  
+  .intro-2 {
+      height: 280px;
+      margin: 30px 10px;
+  }
+  
+  hr {
+      color: black;
+      width: 7%;
+      border: 1px solid;
+      position: relative;
+      top: 30px;
+      left: 0px;
+      margin-left: 20px;
+  }
+  
+  h4 {
+      margin: 17px 0px 0px 125px;
+  }
+  
+  .intro-2 p {
+      padding: 0px 10px;
+      margin: 30px 10px;
+      text-align: justify;
+  }
+  /* 
+  .intro-2 {
+      height: 400px;
+  }
+  
+  .intro-2 hr {
+      width: 50px
+  }
+  
+  .intro-2 p {
+      text-align: justify;
+  } */
+  
+  .reviews-container {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .reviews {
+      display: flex;
+      flex-direction: row;
+      /* Horizontal layout on large screens */
+      gap: 20px;
+      max-width: 1200px;
+  }
+  
+  .review {
+      background-color: whitesmoke;
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+      /* i will come to this later. does not look great on large screens*/
+      margin: 0px 50px;
+      /* Flex to occupy equal space */
+  }
+  
+  .review-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+  }
+  
+  .review-text {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #666;
+  }
+  
+  .divider {
+      width: 2px;
+      background-color: grey;
+      /* Cute color for the line */
+      margin: 0 10px;
+      /* Spacing between reviews */
+  }
+  
+  .img-details {
+      background-color: rgb(223, 223, 223);
+      padding: 80px 20px;
+  }
+  
+  h3 {
+      font-size: 1.4em;
+      font-weight: 700;
+  }
+  
+  .def p {
+      padding: 10px 20px 10px 0px;
+      font-size: 0.9em;
+      width: 50%;
+  }
+  
+  .center-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  
+  .center-div button {
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .img-grid1 {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-content: center;
+  }
+  
+  .img-container1 img {
+      width: 270px;
+      height: 260px;
+      padding: 10px;
+      border-radius: 6%;
+      box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .img-txt {
+      padding: 40px 15px 40px 12px;
+  }
+  
+  .img-container1 {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      background-color: whitesmoke;
+      /* border-radius: 3%; */
+      box-shadow: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 570px;
+  }
+  
+  .faq-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-content: center;
+      padding: 70px 20px;
+  }
+  
+  .faq-section .def {
+      padding: 30px 100px 15px 100px;
+  }
+  
+  .faq-img-column {
+      text-align: center;
+  }
+  
+  .image-faq-dec {
+      padding: 10px 100px;
+      text-align: left;
+      font-size: 0.9em;
+  }
+  
+  .img-faqX {
+      max-width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item {
+      padding: 10px 20px 10px 0px;
+      margin-right: 130px;
+      margin-bottom: 7px;
+      border-bottom: 1px solid #b4afaf;
+  }
+  
+  .faq-header {
+      margin-top: 10px;
+      padding-bottom: 10px;
+  }
+  
+  .faq-question {
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  
+  .faq-answer {
+      font-size: 16px;
+      display: none;
+      padding: 10px 10px;
+  }
+  
+  
+  
+  @media only screen and ( max-width: 920px) {
+     
+      .hero-section img {
+          min-width: 100%;
+          height: 550px;
+          box-shadow: rgba(0, 0, 0, 0.1);
+      }
+      .hero-img-cover {
+          height: 550px;
+      }
+      .intro1 {
+          color: white;
+          position: absolute;
+          top: 250px;
+          left: 0px;
+          margin: 0px 50px;
+          font-style: italic;
+          width: 60%;
+          z-index: 100;
+      }
+      h1 {
+          font-size: 1.7em;
+          margin-bottom: 15px;
+      }
+      .intro1 p {
+          font-size: 0.8em;
+          margin: 0px 30px 15px 0px;
+      }
+      .start {
+          padding: 10px;
+          border: none;
+          border-radius: 10px 0px;
+      }
+      /* Needs more work here - does not look aesthetically pleasing*/
+      .intro-2 {
+          height: auto;
+          margin: 70px 10px;
+      }
+      hr {
+          color: black;
+          width: 7%;
+          border: 1px solid;
+          position: relative;
+          top: 30px;
+          left: 0px;
+      }
+      h4 {
+          margin: 17px 0px 0px 74px;
+      }
+      .intro-2 p {
+          margin: 30px 10px;
+          text-align: justify;
+      }
+      .reviews-container {
+          margin: 100px auto 100px;
+          padding-bottom: 0px;
+      }
+      .reviews {
+          width: 100%;
+          padding-bottom: 35px;
+          margin: 100px 0px 10px;
+          flex-direction: column;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          /* Stack reviews vertically on small screens */
+      }
+      .center-div {
+          flex-direction: column;
+      }
+      .def p {
+          width: 100%;
+      }
+      .img-grid1 {
+          flex-direction: column;
+          margin: 0px auto;
+      }
+      .img-grid1 img {
+          width: 100%;
+      }
+      .img-txt {
+          padding: 20px;
+      }
+      .img-container1 {
+          margin: 0px auto;
+          flex-direction: column;
+          align-content: center;
+      }
+      .faq-img-grid {
+          align-content: center;
+          grid-template-columns: 1fr;
+          gap: 30px;
+      }
+      .column {
+          align-content: center;
+      }
+      .image-faq-dec {
+          padding: 20px 30px;
+      }
+      .faq-item {
+          margin-right: 30px;
+      }
+      
+  }

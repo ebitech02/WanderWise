@@ -1,99 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+ {% extends 'layout.html' %} {% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> {% endblock %} {% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderWise App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+<section class="hero-section">
+    <!-- Hero section -->
+    <img src="{{ url_for('static', filename='images/mountain-ranges-1835815_1280.jpg') }}" alt="Hero Image">
+    <div class="hero-img-cover"></div>
+    <div class="intro1">
+        <h1>Travel & Discover with WanderWise App</h1>
+        <p>WanderWise application that creates personalized adventures for every traveler. <br> Tailored to suit your needs.</p>
+        <a href="{{ url_for('form') }}"><button class="start">Get Started +</button></a>
+    </div>
+</section>
 
-<body>
-    <header>
-        <!--  navlinks -->
-        <div class="navlinks"><a href="#about">About</a>
-            <a href="#">Destination</a>
-            <a href="#">Packages</a>
-        </div>
-        <div class="logo">WanderWise</div>
-        <div class="mobile-menu"><img width="28" height="28" src="https://img.icons8.com/windows/32/menu--v5.png" alt="menu--v5" /></div>
-        <div class="nav-link"><a href="#">Gallery</a>
-            <a href="#">Pricing</a>
-            <a href="{{ url_for('form') }}">Get Started</a></div>
-    </header>
-    <section class="hero-section">
-        <!-- hero section  -->
-        <img src="{{ url_for('static', filename='images/mountain-ranges-1835815_1280.jpg') }}" alt="Hero Image">
-        <div class="intro1">
-            <h1>Travel & Discover with WanderWise App</h1>
-            <p>WanderWise application that creates personalized adventures for every traveler. <br> Tailored to suite your needs</p>
-            <button class="start">Get Started + </button>
-        </div>
-    </section>
-    <!-- You can find what the app is about here  -->
-    <section class="about" id="about">
-        <div class="intro-2">
-            <hr>
-            <h4>Introduction</h4>
-            <p>WanderWise is an intelligent travel recommendation web application designed to help users discover their next adventure. By analyzing user preferences such as climate, activities, and budget, WanderWise suggests ideal countries and destinations
-                tailored to individual interests. With a sleek interface, real-time travel data, and personalized recommendations, WanderWise simplifies the travel planning process, allowing users to explore new destinations effortlessly and wisely.</p>
-        </div>
-        <section class="reviews-container">
-            <div class="reviews">
-                <div class="review">
-                    <div class="review-number">92%</div>
-                    <p class="review-text">Satisfaction Rate</p>
-                </div>
-                <div class="divider"></div>
-                <div class="review">
-                    <div class="review-number">300+</div>
-                    <p class="review-text">Guided Tour</p>
-                </div>
-                <div class="divider"></div>
-                <div class="review">
-                    <div class="review-number">120+</div>
-                    <p class="review-text">Destinations</p>
-                </div>
-                <div class="divider"></div>
-                <div class="review">
-                    <div class="review-number">900+</div>
-                    <p class="review-text">Positive Reviews</p>
-                </div>
-            </div>
-        </section>
-    </section>
-    <section class="img-details">
-        <div class="center-div">
-            <div class="def">
-                <h3>Embrace The Great Outdoors</h3>
-                <p>Embrace the outdoors with curated adventures, exploring forests, mountains and experiencing nature's tranquility.</p>
-            </div>
-            <div class="btn-learn">
-                <button>learn more +</button></div>
-        </div>
-        <div class="img-grid1">
-            <div class="img-container1">
-                <img src="{{ url_for('static', filename='images/mountain-ranges-1835815_1280.jpg') }}" alt="Hero Image">
-                <div class="img-txt">
-                    <p><strong>Image Name</strong></p>
-                    <p>short notes on images</p>
-                </div>
-            </div>
-            <div class="img-container1">
-                <img src="{{ url_for('static', filename='images/mountain-ranges-1835815_1280.jpg') }}" alt="Hero Image">
-                <div class="img-txt">
-                    <p><strong>Image Name</strong></p>
-                    <p>short notes on images</p>
-                </div>
-            </div>
-    </section>
-    <section class="faq">
-    </section>
+<!-- About section -->
+<section class="about" id="about">
+    <div class="intro-2">
+        <hr>
+        <h4>Introduction</h4>
+        <p>WanderWise is an intelligent travel recommendation web application designed to help users discover their next adventure. By analyzing user preferences such as climate, activities, and budget, WanderWise suggests ideal countries and destinations
+            tailored to individual interests. With a sleek interface, real-time travel data, and personalized recommendations, WanderWise simplifies the travel planning process, allowing users to explore new destinations effortlessly and wisely.</p>
+    </div>
+</section>
 
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
+<!-- Reviews section -->
+<section class="reviews-container">
+    <div class="reviews">
+        <div class="review">
+            <div class="review-number">92%</div>
+            <p class="review-text">Satisfaction Rate</p>
+        </div>
+        <div class="divider"></div>
+        <div class="review">
+            <div class="review-number">300+</div>
+            <p class="review-text">Guided Tours</p>
+        </div>
+        <div class="divider"></div>
+        <div class="review">
+            <div class="review-number">120+</div>
+            <p class="review-text">Destinations</p>
+        </div>
+        <div class="divider"></div>
+        <div class="review">
+            <div class="review-number">900+</div>
+            <p class="review-text">Positive Reviews</p>
+        </div>
+    </div>
+</section>
 
-</html>
+<!-- Image details section -->
+<section class="img-details">
+    <div class="center-div">
+        <div class="def">
+            <h3>Embrace The Great Outdoors</h3>
+            <p>Embrace the outdoors with curated adventures, exploring forests, mountains, and experiencing nature's tranquility.</p>
+        </div>
+        <div class="btn-learn">
+            <button>Learn More +</button>
+        </div>
+    </div>
+    <div class="img-grid1">
+        <div class="img-container1">
+            <img src="{{ url_for('static', filename='images/sunset-7133867_1280.jpg') }}" alt="Mountain Image">
+            <div class="img-txt">
+                <p><strong>Image Name</strong></p>
+                <p>Short notes on Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="img-container1">
+            <img src="{{ url_for('static', filename='images/sunset-7133867_1280.jpg') }}" alt="Mountain Image">
+            <div class="img-txt">
+                <p><strong>Image Name</strong></p>
+                <p>Short notes on Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ section -->
+<section class="faq-section">
+    <div class="def">
+        <h3>Why Choose Us *</h3>
+        <p>Embrace the outdoors with curated adventures, exploring forests, mountains, and experiencing nature's tranquility.</p>
+    </div>
+    <div class="faq-img-grid">
+        <div class="column faq-img-column">
+            <img src="{{ url_for('static', filename='images/cape-7404790_1280.jpg') }}" alt="FAQ Image" class="img-faqX">
+            <p class="image-faq-dec">This is a description of the image shown above. It provides more context to the image.</p>
+        </div>
+
+        <!-- Second Column: FAQs -->
+        <div class="column faq-column">
+            <div class="faq-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Q1: What is this?</p>
+                <p class="faq-answer">A: This is a two-column grid example.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Q2: How does it work?</p>
+                <p class="faq-answer">A: It is created using HTML and CSS grid layout.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Q3: Can I customize it?</p>
+                <p class="faq-answer">A: Yes, you can easily modify the layout by changing the CSS styles.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Q4: Is it responsive?</p>
+                <p class="faq-answer">A: Yes, the layout adjusts based on screen size.</p>
+            </div>
+            <div class="faq-item">
+                <p class="faq-question">Q5: Where can I use it?</p>
+                <p class="faq-answer">A: You can use this layout for various sections like galleries or FAQs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %} {% block scripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

@@ -1,54 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %} {% block title %}Country Recommendations{% endblock %} {% block styles %}
+<!-- Page-specific styles for recommendations.html -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/recommendations.css') }}"> {% endblock %} {% block content %}
+<h1>Recommendations Based on Your Preferences</h1>
+<h2>Continent: {{ continent }}</h2>
+<h3>Climate: {{ climate }}</h3>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Recommendations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        .country-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 16px;
-            margin: 10px 0;
-        }
-        
-        .country-card img {
-            max-width: 100px;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>Recommendations Based on Your Preferences</h1>
-    <h2>Continent: {{ continent }}</h2>
-    <h3>Climate: {{ climate }}</h3>
-
-    <div>
-        {% if filtered_countries %} {% for country, details in suggestions_country.items() %}
-        <div class="country-card">
-            <h3>{{ country }}</h3>
-            <p><strong>Flag:</strong> <img src="{{ details.Flag }}" alt="{{ country }} Flag"></p>
-            <p><strong>Capital:</strong> {{ details.Capital }}</p>
-            <p><strong>Currency:</strong> {{ details.Currency }}</p>
-            <p><strong>Notable Places:</strong> {{ details.OpenTripMap|join(', ') }}</p>
-            <p><strong>Description:</strong> {{ details.WikiVoyage }}</p>
-            <p><strong>Food Recommendations:</strong> {{ details.Food|join(', ') }}</p>
-            <p><strong>Calling Code:</strong> {{ details['Calling Code']|default('Not available') }}</p>
-        </div>
-        {% endfor %} {% else %}
-        <p>No countries match your preferences.</p>
-        {% endif %}
+<div>
+    {% if filtered_countries %} {% for country, details in suggestions_country.items() %}
+    <div class="country-card">
+        <h3>{{ country }}</h3>
+        <p><strong>Flag:</strong> <img src="{{ details.Flag }}" alt="{{ country }} Flag"></p>
+        <p><strong>Capital:</strong> {{ details.Capital }}</p>
+        <p><strong>Currency:</strong> {{ details.Currency }}</p>
+        <p><strong>Notable Places:</strong> {{ details.OpenTripMap|join(', ') }}</p>
+        <p><strong>Description:</strong> {{ details.WikiVoyage }}</p>
+        <p><strong>Food Recommendations:</strong> {{ details.Food|join(', ') }}</p>
+        <p><strong>Calling Code:</strong> {{ details['Calling Code']|default('Not available') }}</p>
     </div>
-</body>
-
-</html>
+    {% endfor %} {% else %}
+    <p>No countries match your preferences.</p>
+    {% endif %}
+</div>
+{% endblock %}

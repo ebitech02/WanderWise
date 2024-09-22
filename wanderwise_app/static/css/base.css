@@ -1,0 +1,306 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box
+ }
+ 
+ body {
+     background-color: whitesmoke;
+     font-family: "Poppins", serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+     font-size: 1.1em;
+     /* padding: 0px 15px; */
+ }
+ /* font css classes */
+ 
+ .poppins-thin {
+     font-family: "Poppins", system-ui;
+     font-weight: 100;
+     font-style: normal;
+ }
+ 
+ .poppins-extralight {
+     font-family: "Poppins", system-ui;
+     font-weight: 200;
+     font-style: normal;
+ }
+ 
+ .poppins-light {
+     font-family: "Poppins", system-ui;
+     font-weight: 300;
+     font-style: normal;
+ }
+ 
+ .poppins-regular {
+     font-family: "Poppins", system-ui;
+     font-weight: 400;
+     font-style: normal;
+ }
+ 
+ .poppins-medium {
+     font-family: "Poppins", system-ui;
+     font-weight: 500;
+     font-style: normal;
+ }
+ 
+ .poppins-semibold {
+     font-family: "Poppins", system-ui;
+     font-weight: 600;
+     font-style: normal;
+ }
+ 
+ .poppins-bold {
+     font-family: "Poppins", system-ui;
+     font-weight: 700;
+     font-style: normal;
+ }
+ 
+ .poppins-extrabold {
+     font-family: "Poppins", system-ui;
+     font-weight: 800;
+     font-style: normal;
+ }
+ 
+ .poppins-black {
+     font-family: "Poppins", system-ui;
+     font-weight: 900;
+     font-style: normal;
+ }
+ 
+ .poppins-thin-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 100;
+     font-style: italic;
+ }
+ 
+ .poppins-extralight-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 200;
+     font-style: italic;
+ }
+ 
+ .poppins-light-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 300;
+     font-style: italic;
+ }
+ 
+ .poppins-regular-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 400;
+     font-style: italic;
+ }
+ 
+ .poppins-medium-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 500;
+     font-style: italic;
+ }
+ 
+ .poppins-semibold-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 600;
+     font-style: italic;
+ }
+ 
+ .poppins-bold-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 700;
+     font-style: italic;
+ }
+ 
+ .poppins-extrabold-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 800;
+     font-style: italic;
+ }
+ 
+ .poppins-black-italic {
+     font-family: "Poppins", system-ui;
+     font-weight: 900;
+     font-style: italic;
+ }
+ 
+ header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 20px 15px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ header a {
+     color: black;
+     text-decoration: none;
+     margin-left: 20px;
+ }
+ 
+ header a:last-child {
+     margin-right: 20px;
+ }
+ 
+ .mobile-menu {
+     display: none;
+ }
+ 
+ .logo {
+     color: black;
+     text-decoration: none;
+     font-size: 1em;
+ }
+ /* footer styles */
+ 
+ footer {
+     margin: 30px 0px;
+     position: relative;
+ }
+ 
+ .xl-txt h5 {
+     margin-bottom: 3px;
+     font-size: 2em;
+ }
+ 
+ .xl-txt {
+     margin: 0px 200px;
+     z-index: 100;
+     color: whitesmoke;
+     position: absolute;
+     top: 30%;
+     border: #333;
+ }
+ 
+ .footer-btn {
+     margin-top: 13px;
+     padding: 10px;
+     border-radius: 5px;
+     box-shadow: rgba(0, 0, 0, 0.1);
+ }
+ 
+ .img-footer {
+     width: 100%;
+     height: 540px;
+     position: absolute;
+ }
+ 
+ .footer-grid {
+     padding-top: 30px;
+     margin: 0px 50px 70px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ .last-txt {
+     font-size: 1.6em;
+     color: #333;
+ }
+ 
+ .last-txt span {
+     color: steelblue;
+ }
+ 
+ .address span {
+     font-weight: 700;
+     color: steelblue;
+ }
+ 
+ .footer-nav {
+     margin: 30px 0px;
+     font-size: 14px;
+     font-weight: 600;
+     color: #333;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 21px 15px;
+     border-top: #333 1px solid;
+     border-bottom: #333 1px solid;
+ }
+ 
+ .footer-nav a {
+     color: black;
+     text-decoration: none;
+     margin-left: 20px;
+ }
+ 
+ .footer-nav:last-child {
+     margin-right: 20px;
+ }
+ 
+ .img-cover {
+     position: relative;
+     background-color: black;
+     height: 540px;
+     width: 100%;
+     z-index: 10;
+     opacity: 60%;
+ }
+ 
+ @media only screen and ( max-width: 920px) {
+     header {
+         padding: 13px 0px;
+         flex-direction: column;
+     }
+     .logo {
+         position: relative;
+         left: 12px;
+     }
+     .mobile-menu {
+         display: flex;
+         position: absolute;
+         right: 20px;
+         transition: transform 0.5s ease;
+     }
+     .mobile-menu:hover {
+         transform: rotate(360deg);
+     }
+     /* .menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.3s ease;
+          transform: translateX(100%);
+      }
+      .menu.open {
+          transform: translateX(0);
+      } */
+     header a {
+         display: none;
+     }
+     .footer-nav .navlinks {
+         display: none;
+     }
+     .footer-nav .nav-link {
+         display: none;
+     }
+     .footer-nav .logo {
+         display: block;
+         text-align: center;
+         align-content: center;
+     }
+     .footer-nav {
+         justify-content: center;
+     }
+     footer .xl-txt {
+         top: 15%;
+         margin: 0px 50px;
+     }
+     .footer-grid {
+         margin: 0px 20px 70px;
+         gap: 50px;
+     }
+     .last-txt {
+         font-size: 1.4em;
+     }
+     .address {
+         font-size: 1em;
+     }
+ }
